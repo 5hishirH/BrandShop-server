@@ -1,26 +1,52 @@
 [
-    {
-        "brandName": "Nike",
-        "img": "https://i.ibb.co/hCp6p8k/nikeLogo.png"
-    },
-    {
-        "brandName": "Addidas",
-        "img": "https://i.ibb.co/VBWgV9b/adidas-Logo.jpg"
-    },
-    {
-        "brandName": "Gucci",
-        "img": "https://i.ibb.co/S0tB0yj/gucci-Logo.png"
-    },
-    {
-        "brandName": "Zara",
-        "img": "https://i.ibb.co/rkyqPy3/zaraLogo.jpg"
-    },
-    {
-        "brandName": "H&M",
-        "img": "https://i.ibb.co/GMmh0F5/h-mLogo.png"
-    },
-    {
-        "brandName": "Levi's",
-        "img": "https://i.ibb.co/3BVc9qm/Levis-Logo.png"
-    }
+  {
+    "brandName": "Nike",
+    "img": "https://i.ibb.co/hCp6p8k/nikeLogo.png",
+    "ads": [
+      "https://i.ibb.co/QkdB1vG/nike-ad-2.jpg",
+      "https://i.ibb.co/xHjpNWK/nike-ad-3.jpg",
+      "https://i.ibb.co/Vgdxw17/nike-ad-4.png"
+    ]
+  },
+  {
+    "brandName": "Addidas",
+    "img": "https://i.ibb.co/VBWgV9b/adidas-Logo.jpg",
+    "ads": [
+      "https://i.ibb.co/S7VYxwn/adidas1.jpg",
+      "https://i.ibb.co/5vQDq07/adidas2.jpg",
+      "https://i.ibb.co/1RyHybv/adidas3.webp"
+    ]
+  },
+  {
+    "brandName": "Gucci",
+    "img": "https://i.ibb.co/S0tB0yj/gucci-Logo.png",
+    "ads": [
+      "https://i.ibb.co/2jMXSyV/gucci1.jpg",
+      "https://i.ibb.co/vsbKjGB/gucci2.webp",
+      "https://i.ibb.co/NsRPhrC/gucci3.jpg"
+    ]
+  },
+  {
+    "brandName": "Zara",
+    "img": "https://i.ibb.co/rkyqPy3/zaraLogo.jpg",
+    "ads": [
+      "https://i.ibb.co/FX2XZp5/zara1.jpg",
+      "https://i.ibb.co/Z2BD8Qh/zara2.jpg",
+      "https://i.ibb.co/xF0jTNn/zara3.jpg"
+    ]
+  },
+  {
+    "brandName": "H&M",
+    "img": "https://i.ibb.co/GMmh0F5/h-mLogo.png",
+    "ads": []
+  },
+  {
+    "brandName": "Levi's",
+    "img": "https://i.ibb.co/3BVc9qm/Levis-Logo.png",
+    "ads": [
+      "https://i.ibb.co/GvMVYhK/levis1.jpg",
+      "https://i.ibb.co/rGLgvrL/levis2.jpg",
+      "https://i.ibb.co/Dg4jVvP/levis3.png"
+    ]
+  }
 ]
