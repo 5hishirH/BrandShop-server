@@ -38,7 +38,11 @@
   {
     "brandName": "H&M",
     "img": "https://i.ibb.co/GMmh0F5/h-mLogo.png",
-    "ads": []
+    "ads": [
+      "https://i.ibb.co/xzYK4gm/h-m1.jpg",
+      "https://i.ibb.co/ByT4v7h/h-m2.jpg",
+      "https://i.ibb.co/88cTKRQ/h-m3.jpg"
+    ]
   },
   {
     "brandName": "Levi's",
