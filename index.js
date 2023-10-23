@@ -32,15 +32,9 @@ async function run() {
     console.log(
       "Pinged your deployment. You successfully connected to MongoDB!"
     );
-    // test deployment in vercel
-    const database = client.db("insertDB");
-    const haiku = database.collection("haiku");
+   
+    //...
 
-    app.get('/test', async (req, res) => {
-      const linkon = haiku.find();
-      const diganto = await linkon.toArray();
-      res.send(diganto);
-    })
   } finally {
     // Ensures that the client will close when you finish/error
     // await client.close();
