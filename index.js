@@ -32,9 +32,15 @@ async function run() {
     console.log(
       "Pinged your deployment. You successfully connected to MongoDB!"
     );
-   
-    //...
 
+    //...
+    const brandCollection = client.db("brandShopDB").collection("brand");
+
+    app.get("/brands", async (req, res) => {
+      const cursor = brandCollection.find();
+      const result = await cursor.toArray();
+      res.send(result);
+    });
   } finally {
     // Ensures that the client will close when you finish/error
     // await client.close();
