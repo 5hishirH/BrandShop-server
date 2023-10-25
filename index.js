@@ -41,6 +41,7 @@ async function run() {
     //...
     const brandCollection = client.db("brandShopDB").collection("brand");
     const productCollection = client.db("productDB").collection("product");
+    const cartCollection = client.db("cartDB").collection("cart1");
 
     app.get("/brands", async (req, res) => {
       const cursor = brandCollection.find();
@@ -74,12 +75,49 @@ async function run() {
       res.send(result);
     });
 
+    app.get("/cart", async (req, res) => {
+      const cursor = cartCollection.find();
+      const result = await cursor.toArray();
+      res.send(result);
+    });
+
     app.post("/products", async (req, res) => {
       const newProduct = req.body;
       console.log(newProduct);
       const result = await productCollection.insertOne(newProduct);
       res.send(result);
     });
+
+    app.post("/cart", async (req, res) => {
+      const doc = req.body;
+      console.log(doc);
+      const result = await cartCollection.insertOne(doc);
+      res.send(result);
+    });
+
+    app.put('/products/:id', async (req, res) => {
+      const id = req.params.id;
+      const filter = { _id: new ObjectId(id) }
+      const options = { upsert: true };
+      const updatedProduct = req.body;
+
+      const product = {
+          $set: {
+              name: updatedProduct.name,
+              brand_name: updatedProduct.brand_name,
+              type: updatedProduct.type,
+              info: updatedProduct.info,
+              category: updatedProduct.category,
+              rating: updatedProduct.rating,
+              img: updatedProduct.img,
+              price: updatedProduct.price
+          }
+      }
+
+      const result = await productCollection.updateOne(filter, product, options);
+      res.send(result);
+  });
+
   } finally {
     // Ensures that the client will close when you finish/error
     // await client.close();
